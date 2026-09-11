@@ -1,0 +1,486 @@
+/* ============================================
+   EL PROCÉS TECNOLÒGIC — fulls d'estil
+   Identitat: quadern de taller / plànol tècnic
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+  --blueprint: #14335c;
+  --blueprint-dark: #0c2242;
+  --teal: #0aa9c7;
+  --amber: #f2a20c;
+  --amber-dark: #c97e00;
+  --paper: #f7f4ec;
+  --paper-line: #e4dfd0;
+  --ink: #1c2430;
+  --ink-soft: #4c5566;
+  --green: #2f8f5b;
+  --white: #ffffff;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  --radius: 14px;
+  --max-w: 1080px;
+}
+
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+
+body{
+  margin:0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+img{ max-width:100%; display:block; border-radius: 10px; }
+
+h1,h2,h3{
+  font-family: var(--font-display);
+  color: var(--blueprint);
+  line-height: 1.15;
+  margin: 0 0 .5em 0;
+}
+
+a{ color: var(--teal); }
+
+.wrap{
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.eyebrow{
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .78rem;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+/* ---------- Blueprint grid background ---------- */
+.blueprint-bg{
+  background-color: var(--blueprint);
+  background-image:
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  color: var(--white);
+}
+.blueprint-bg h1, .blueprint-bg h2, .blueprint-bg h3{ color: var(--white); }
+
+/* ---------- Header / nav ---------- */
+.site-header{
+  position: sticky; top:0; z-index: 50;
+  background: var(--blueprint-dark);
+  border-bottom: 3px solid var(--amber);
+}
+.nav-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 14px 24px;
+  max-width: var(--max-w); margin:0 auto;
+}
+.logo{
+  font-family: var(--font-display);
+  color: var(--white);
+  font-weight:700; font-size:1.05rem;
+  display:flex; align-items:center; gap:10px;
+  text-decoration:none;
+}
+.logo .gear{ font-size:1.3rem; }
+.nav-toggle{
+  display:none;
+  background:none; border: 2px solid var(--white); color:var(--white);
+  border-radius:8px; padding:8px 12px; font-size:1rem; cursor:pointer;
+}
+.nav-links{
+  display:flex; flex-wrap:wrap; gap: 4px;
+}
+.nav-links a{
+  color: var(--paper);
+  text-decoration:none;
+  font-family: var(--font-mono);
+  font-size: .82rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background .15s ease;
+}
+.nav-links a:hover{ background: rgba(255,255,255,.12); color: var(--amber); }
+
+/* ---------- Hero ---------- */
+.hero{
+  padding: 64px 0 56px;
+}
+.hero-grid{
+  display:grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items:center;
+}
+.hero h1{
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: .4em;
+}
+.hero .lead{
+  font-size: 1.15rem;
+  color: rgba(255,255,255,.88);
+  max-width: 46ch;
+}
+.hero-img-frame{
+  border: 3px solid var(--amber);
+  border-radius: var(--radius);
+  overflow:hidden;
+  background: var(--blueprint-dark);
+  position:relative;
+}
+.hero-img-frame img{ border-radius: 0; width:100%; height:280px; object-fit:cover; opacity:.92; }
+.hero-img-frame figcaption{
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  color: rgba(255,255,255,.7);
+  padding: 8px 12px;
+  border-top: 1px solid rgba(255,255,255,.15);
+}
+
+/* ---------- Menu de botons / cards ---------- */
+.menu-section{ padding: 56px 0; }
+.menu-section h2{ text-align:center; }
+.menu-sub{ text-align:center; color: var(--ink-soft); max-width: 60ch; margin: 0 auto 40px; }
+
+.card-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+.menu-card{
+  display:block;
+  background: var(--white);
+  border: 2px solid var(--paper-line);
+  border-left: 6px solid var(--teal);
+  border-radius: var(--radius);
+  padding: 20px 20px 18px;
+  text-decoration:none;
+  color: var(--ink);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.menu-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(20,51,92,.12);
+  border-left-color: var(--amber);
+}
+.menu-card .num{
+  font-family: var(--font-mono);
+  color: var(--teal);
+  font-size: .8rem;
+  font-weight:700;
+}
+.menu-card h3{ margin: 6px 0 4px; font-size: 1.08rem; }
+.menu-card p{ margin:0; font-size: .92rem; color: var(--ink-soft); }
+
+/* ---------- Sections ---------- */
+.section{
+  padding: 64px 0;
+  border-top: 1px solid var(--paper-line);
+}
+.section.alt{ background: var(--white); }
+.section-tag{
+  font-family: var(--font-mono);
+  color: var(--teal);
+  font-weight:700;
+  font-size: .82rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.section h2{ font-size: clamp(1.5rem, 3vw, 2.1rem); margin-top:.2em; }
+.section h3{ font-size: 1.25rem; margin-top: 1.6em; }
+.section h3 .sub-num{ color: var(--teal); font-family: var(--font-mono); margin-right:.4em; }
+
+.two-col{
+  display:grid; grid-template-columns: 1.3fr .9fr; gap: 32px; align-items:start;
+}
+@media (max-width: 760px){ .two-col{ grid-template-columns: 1fr; } }
+
+figure.inline-img{ margin: 18px 0; }
+figure.inline-img figcaption{
+  font-family: var(--font-mono);
+  font-size: .74rem;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+
+/* ---------- Llistes de concepte ---------- */
+.concept-list{ list-style:none; padding:0; margin: 18px 0; display:grid; gap:12px; }
+.concept-list li{
+  background: var(--paper);
+  border-left: 4px solid var(--teal);
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+.concept-list strong{ color: var(--blueprint); }
+
+/* ---------- Fases (timeline) ---------- */
+.phase-track{
+  position: relative;
+  margin: 40px 0;
+  padding-left: 28px;
+  border-left: 3px dashed var(--teal);
+}
+.phase{
+  position: relative;
+  margin-bottom: 46px;
+  padding-left: 12px;
+}
+.phase:last-child{ margin-bottom:0; }
+.phase-badge{
+  position:absolute; left: -43px; top: -4px;
+  width: 36px; height:36px; border-radius:50%;
+  background: var(--blueprint);
+  color: var(--white);
+  font-family: var(--font-mono); font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+  border: 3px solid var(--amber);
+}
+.phase h3{ margin-top:0; }
+.phase .phase-question{
+  font-family: var(--font-mono);
+  color: var(--amber-dark);
+  font-size: .95rem;
+  margin-bottom: 10px;
+}
+.example-box{
+  background: #eef8f5;
+  border: 1px dashed var(--green);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-top: 14px;
+  font-size: .95rem;
+}
+.example-box .label{
+  font-family: var(--font-mono); font-weight:700; color: var(--green);
+  display:block; margin-bottom: 4px; font-size:.78rem; text-transform:uppercase;
+}
+
+/* ---------- Activitats ---------- */
+.activity{
+  background: var(--blueprint);
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin: 26px 0;
+}
+.activity h4{
+  font-family: var(--font-mono);
+  color: var(--amber);
+  margin:0 0 10px 0;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  font-size:.95rem;
+}
+.activity p{ margin:.4em 0; }
+.activity ol, .activity ul{ margin: 10px 0 0 0; padding-left: 22px; }
+.activity li{ margin-bottom: 10px; }
+.answer-line{
+  display:block;
+  border-bottom: 1px dashed rgba(255,255,255,.5);
+  min-height: 26px;
+  margin-top: 4px;
+}
+.competences{
+  margin-top: 14px;
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  color: var(--amber);
+}
+.reflect{
+  margin-top: 18px;
+  font-style: italic;
+  color: var(--blueprint);
+  background: #fff6e0;
+  border-radius: 10px;
+  padding: 12px 16px;
+  border-left: 4px solid var(--amber);
+}
+
+/* ---------- Taules ---------- */
+table.data-table{
+  width:100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: var(--white);
+  border-radius: 10px;
+  overflow:hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+table.data-table th, table.data-table td{
+  text-align:left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--paper-line);
+  font-size: .95rem;
+}
+table.data-table th{
+  background: var(--blueprint);
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: .82rem;
+  text-transform: uppercase;
+}
+table.data-table tr:nth-child(even) td{ background: var(--paper); }
+
+/* ---------- Infografia SVG ---------- */
+.infographic{ margin: 30px auto; max-width: 760px; }
+.infographic svg{ width:100%; height:auto; }
+
+/* ---------- Exemples reals ---------- */
+.example-card{
+  background: var(--white);
+  border: 2px solid var(--paper-line);
+  border-radius: var(--radius);
+  padding: 22px;
+  margin: 22px 0;
+}
+.example-card h3{ margin-top:0; }
+.example-steps{ list-style:none; padding:0; margin:14px 0 0; display:grid; gap:10px; }
+.example-steps li{
+  display:grid; grid-template-columns: 110px 1fr; gap:10px;
+  font-size:.95rem;
+  border-bottom: 1px dashed var(--paper-line);
+  padding-bottom:10px;
+}
+.example-steps li:last-child{ border-bottom:none; }
+.example-steps b{ font-family: var(--font-mono); color: var(--teal); font-size:.78rem; text-transform:uppercase; }
+
+/* ---------- Ordena les fases (activitat R1) ---------- */
+.order-list{ list-style:none; padding:0; margin:16px 0; display:grid; gap:10px; }
+.order-list li{
+  background: rgba(255,255,255,.1);
+  border: 1px dashed rgba(255,255,255,.4);
+  border-radius:8px;
+  padding: 10px 14px;
+  display:flex; gap:12px; align-items:center;
+}
+.order-list select{
+  font-family: var(--font-mono);
+  border-radius:6px; border:none; padding:4px 8px;
+}
+
+/* ---------- Footer ---------- */
+footer{
+  background: var(--blueprint-dark);
+  color: rgba(255,255,255,.75);
+  padding: 36px 0;
+  text-align:center;
+  font-size:.88rem;
+}
+footer a{ color: var(--amber); }
+
+/* ---------- Botó tornar amunt ---------- */
+.top-link{
+  display:inline-block; margin-top: 10px;
+  font-family: var(--font-mono); font-size:.8rem;
+  color: var(--teal); text-decoration:none;
+}
+
+/* ---------- Graella de propietats ---------- */
+.prop-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+.prop-card{
+  background: var(--white);
+  border: 2px solid var(--paper-line);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.prop-card .prop-name{
+  font-family: var(--font-mono);
+  font-weight:700;
+  color: var(--blueprint);
+  font-size:.92rem;
+  display:block;
+  margin-bottom:4px;
+}
+.prop-card p{ margin:0; font-size:.9rem; color: var(--ink-soft); }
+.prop-card.chem{ border-left: 4px solid var(--amber); }
+.prop-card.phys{ border-left: 4px solid var(--teal); }
+.prop-card.aesthetic{ border-left: 4px solid var(--green); }
+.prop-card.con{ border-left: 4px solid #c0392b; }
+
+/* ---------- Targetes de material/derivat ---------- */
+.material-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin: 20px 0;
+}
+.material-card{
+  background: var(--white);
+  border: 2px solid var(--paper-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.material-card img{ width:100%; height:150px; object-fit:cover; border-radius:0; }
+.material-card .mc-body{ padding: 16px 18px; }
+.material-card h4{
+  font-family: var(--font-display); color: var(--blueprint);
+  margin: 0 0 6px 0; font-size: 1.05rem;
+}
+.material-card ul{ margin: 8px 0 0 0; padding-left: 18px; font-size:.88rem; color: var(--ink-soft); }
+.material-card ul li{ margin-bottom: 4px; }
+
+/* ---------- Pastilles / badges de text ---------- */
+.pill-row{ display:flex; flex-wrap:wrap; gap:8px; margin: 14px 0; }
+.pill{
+  font-family: var(--font-mono);
+  font-size:.78rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--paper);
+  border: 1px solid var(--paper-line);
+  color: var(--blueprint);
+}
+
+/* ---------- Diagrama del tronc ---------- */
+.trunk-diagram{ max-width: 480px; margin: 0 auto; }
+.trunk-legend{ list-style:none; padding:0; margin:16px 0; display:grid; gap:8px; }
+.trunk-legend li{ display:flex; align-items:center; gap:10px; font-size:.92rem; }
+.trunk-legend .swatch{ width:16px; height:16px; border-radius:4px; flex-shrink:0; }
+
+/* ---------- Preguntes de selecció (apartat 6) ---------- */
+.question-list{ list-style:none; padding:0; margin:16px 0; display:grid; gap:10px; }
+.question-list li{
+  background: var(--white);
+  border: 1px solid var(--paper-line);
+  border-radius: 10px;
+  padding: 12px 16px;
+  display:flex; justify-content:space-between; align-items:center; gap:10px;
+  font-size:.95rem;
+}
+.question-list .answer{ font-family: var(--font-mono); color: var(--teal); font-weight:700; white-space:nowrap; }
+
+/* ---------- Relaciona (activitat R1) ---------- */
+.match-row{
+  display:grid; grid-template-columns: 1fr auto 1fr; gap: 14px; align-items:center;
+  background: rgba(255,255,255,.08); border-radius: 10px; padding: 10px 14px; margin-bottom:10px;
+}
+.match-row select{ font-family: var(--font-mono); border-radius:6px; border:none; padding:6px 8px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 820px){
+  .hero-grid{ grid-template-columns: 1fr; }
+  .nav-links{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    background: var(--blueprint-dark);
+    position:absolute; top:100%; left:0;
+    padding: 10px 24px 18px;
+  }
+  .nav-links.open{ display:flex; }
+  .nav-toggle{ display:inline-block; }
+  .nav-inner{ flex-wrap:wrap; }
+}

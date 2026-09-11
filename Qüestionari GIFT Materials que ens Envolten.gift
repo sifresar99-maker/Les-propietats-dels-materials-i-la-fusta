@@ -1,0 +1,225 @@
+// =============================================
+// BATERIA DE PREGUNTES: MATERIALS QUE ENS ENVOLTEN
+// 1r d'ESO - Tecnologia i Digitalització
+// =============================================
+
+// =============================================
+// PART 1: 10 PREGUNTES D'OPCIÓ MÚLTIPLE
+// =============================================
+
+::Q1_OpcioMultiple::Què és un material tecnològic? {
+    =Qualsevol substància que utilitzem per a fabricar objectes que satisfan necessitats
+    ~Només els metalls i plàstics
+    ~Allò que es pot reciclar
+    ~Els materials que es troben a la natura sense transformar
+    ~Només els materials sintètics
+}
+
+::Q2_OpcioMultiple::De què està composta principalment la fusta? {
+    =Cel·lulosa i lignina
+    ~Cel·lulosa i aigua
+    ~Lignina i minerals
+    ~Plàstic i fibres
+    ~Carboni i hidrogen
+}
+
+::Q3_OpcioMultiple::Quina part del tronc és la més antiga i dura? {
+    =Duramen
+    ~Albura
+    ~Escorça
+    ~Càmbium
+    ~Medul·la
+}
+
+::Q4_OpcioMultiple::Quins arbres produeixen fustes toves? {
+    =Coníferes (pi, avet, pícea)
+    ~Frondoses (alzina, roure, faig)
+    ~Arbres fruiters
+    ~Arbres de fulla caduca
+    ~Palmeres
+}
+
+::Q5_OpcioMultiple::Què és el contraxapat? {
+    =Làmines fines de fusta enganxades encreuades
+    ~Serrdures premsades amb cola
+    ~Fibres de fusta molt fines premsades
+    ~Encenalls grans de fusta orientats
+    ~Fusta natural sense tractar
+}
+
+::Q6_OpcioMultiple::Quina propietat permet a un material recuperar la seua forma original després de deformar-se? {
+    =Elasticitat
+    ~Duresa
+    ~Flexibilitat
+    ~Densitat
+    ~Conductivitat
+}
+
+::Q7_OpcioMultiple::Quin metall és el millor conductor elèctric? {
+    =Coure
+    ~Ferro
+    ~Alumini
+    ~Or
+    ~Zinc
+}
+
+::Q8_OpcioMultiple::Què és un aliatge? {
+    =Una barreja de dos o més metalls
+    ~Un material sintètic
+    ~Un tipus de plàstic
+    ~Un material compost
+    ~Un metall pur
+}
+
+::Q9_OpcioMultiple::Quina és la primera de les 3 R de la sostenibilitat? {
+    =Reduir
+    ~Reutilitzar
+    ~Reciclar
+    ~Reparar
+    ~Renovar
+}
+
+::Q10_OpcioMultiple::Quin és l'inconvenient principal de la fusta? {
+    =Absorbeix humitat i es pot deformar
+    ~És massa dura
+    ~No es pot pintar
+    ~És molt cara
+    ~No es pot tallar
+}
+
+// =============================================
+// PART 2: 10 PREGUNTES DE VERTADER/FALS
+// =============================================
+
+::Q11_VF::La fusta és un material sintètic. {
+    F
+}
+
+::Q12_VF::El MDF és un derivat de la fusta amb superfície molt llisa. {
+    T
+}
+
+::Q13_VF::Els metalls són bons aïllants tèrmics i elèctrics. {
+    F
+}
+
+::Q14_VF::Els plàstics termoplàstics es poden fondre i reciclar. {
+    T
+}
+
+::Q15_VF::La fusta de pi és una fusta dura. {
+    F
+}
+
+::Q16_VF::El vidre es pot reciclar fàcilment. {
+    T
+}
+
+::Q17_VF::L'OSB és un derivat de la fusta fet amb fibres molt fines. {
+    F
+}
+
+::Q18_VF::Els materials renovables es poden regenerar naturalment. {
+    T
+}
+
+::Q19_VF::El formigó és un material compost de ciment i àrids. {
+    T
+}
+
+::Q20_VF::La petjada de carboni mesura les emissions de CO₂ d'un material. {
+    T
+}
+
+// =============================================
+// PART 3: 10 PREGUNTES D'APARELLAMENT
+// =============================================
+
+::Q21_Aparellament::Relaciona cada tipus de material amb el seu origen. {
+    =Materials naturals -> S'obtenen directament de la natura
+    =Materials sintètics -> S'elaboren per l'ésser humà transformant materials naturals
+    =Materials compostos -> Barreja de dos o més materials
+    =Materials renovables -> Es poden regenerar naturalment
+    =Materials no renovables -> No es poden regenerar o triguen milions d'anys
+}
+
+::Q22_Aparellament::Relaciona cada derivat de la fusta amb la seua descripció. {
+    =Contraxapat -> Làmines fines enganxades encreuades
+    =Aglomerat -> Serradures i encenalls premsats amb cola
+    =MDF -> Fibres de fusta molt fines premsades
+    =OSB -> Encenalls grans orientats en diferents direccions
+    =Xapa -> Làmina fina de fusta per a revestir
+}
+
+::Q23_Aparellament::Relaciona cada propietat amb la seua definició. {
+    =Duresa -> Resistència a ser ratllat
+    =Flexibilitat -> Capacitat de doblegar-se sense trencar-se
+    =Elasticitat -> Capacitat de recuperar la forma original
+    =Densitat -> Relació entre massa i volum
+    =Conductivitat -> Capacitat de transmetre calor o electricitat
+}
+
+::Q24_Aparellament::Relaciona cada part del tronc amb la seua funció. {
+    =Escorça -> Capa exterior protectora
+    =Càmbium -> Capa on es produeix el creixement
+    =Albura -> Part més jove per on circula la saba
+    =Duramen -> Part central més antiga i dura
+    =Medul·la -> Centre del tronc, molt tova
+}
+
+::Q25_Aparellament::Relaciona cada metall amb el seu ús principal. {
+    =Coure -> Cables elèctrics
+    =Alumini -> Envasos i finestres
+    =Ferro -> Base de la metal·lúrgia
+    =Or -> Joieria
+    =Estany -> Soldadures i revestiments
+}
+
+::Q26_Aparellament::Relaciona cada plàstic amb la seua característica. {
+    =PE (Polietilè) -> Versàtil, barat, per a bosses i ampolles
+    =PVC -> Resistent, per a canonades i finestres
+    =PP (Polipropilè) -> Resistent a altes temperatures
+    =PS (Poliestirè) -> Rígid i transparent
+    =PTFE (Teflon) -> Antiadherent i resistent al calor
+}
+
+::Q27_Aparellament::Relaciona cada material de construcció amb l'ús. {
+    =Pedra -> Edificis i carreteres
+    =Maó -> Murs i edificis
+    =Ciment -> Barreges i formigó
+    =Formigó -> Estructures i fonaments
+    =Vidre -> Finestres i ampolles
+}
+
+::Q28_Aparellament::Relaciona cada material amb el seu tipus de fusta. {
+    =Pi -> Tova (conífera)
+    =Avet -> Tova (conífera)
+    =Alzina -> Dura (frondosa)
+    =Roure -> Dura (frondosa)
+    =Faig -> Dura (frondosa)
+}
+
+::Q29_Aparellament::Relaciona cada aliatge amb la seua composició. {
+    =Bronze -> Coure + estany
+    =Llautó -> Coure + zinc
+    =Duralumini -> Alumini + coure + magnesi
+    =Acer inoxidable -> Ferro + crom + níquel
+    =Acer -> Ferro + carboni
+}
+
+::Q30_Aparellament::Relaciona cada material compost amb els seus components. {
+    =Fibra de carboni -> Fibres de carboni + resina
+    =Kevlar -> Fibres sintètiques + resina
+    =Fibra de vidre -> Fibres de vidre + resina
+    =Contraxapat -> Làmines de fusta + cola
+    =Formigó -> Ciment + àrids (pedra, arena)
+}
+
+// =============================================
+// COMPETÈNCIES ESPECÍFIQUES TREBALLADES
+// =============================================
+
+// CE 1: Identificar problemes i triar materials per a resoldre'ls
+// CE 3: Seleccionar i utilitzar els materials adequats per a cada tasca
+// CE 4: Analitzar críticament les implicacions ambientals dels materials
+// CE 7: Valorar la importància de la sostenibilitat en la tecnologia
